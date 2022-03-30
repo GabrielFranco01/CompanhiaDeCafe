@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rafão Coffee Company  - Qualidade e Sabor</title>
+    <!--Bibliotecas externas-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        </style>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7f7c32494.js" crossorigin="anonymous"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <!--Topo do site-->
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src= "coffe.jpg" height="100px" alt="logo café"> Rafão Coffee Company 
+                    
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>            
+            
+            </button> <!--Mobile-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+                    <a  href="#" class="nav-item nav-link" id="about-menu">Quem Somos</a>
+                    <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
+                    <a  href="#" class="nav-item nav-link" id="contact-menu">Contato</a>
+                </div>
+
+            </div>
+                
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+            <div class="container-fluid"></div>
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <img src="plano-de-fundo-cafe.jpg" class="d-block w-100" alt="Pão de queijos do café">
+                     <div class="carousel-caption d-none d-md-block">
+                         <h2>Comece seu dia de trabalho com um café da manhã de qualidade!</h2>
+                         <p>Nossa equipe está preparada para te proporcionar essa experiência saborosa</p>
+                         <a href="#"class="main-btn">Ver Projetos</a>
+                     </div> 
+                    
+                         </div>
+
+                     </div>
+                     </div>
+            
+                
+    </main>
+
+    <section>
+        <div class="row">
+            <h3 class="titulo">Quem Somos</h3>
+            <div id="linha-vertical"></div>
+            <div id="linha-horizontal"></div>
+            <div class="col-sm-6">
+                <img class ="img-fluid" src="cafe-familiar.jpg" width="500px" height="300px" alt="Café familiar">
+            </div>
+            <div class="col-sm-6">
+                <h3 class="about-title">O café do futuro ☕</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, totam quam enim est deleniti fugiat, <br> 
+                    vel voluptates quasi illum blanditiis adipisci porro libero, corporis iste! Rem minus atque ut modi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia a consectetur vitae perspiciatis <br>
+                     iusto odit incidunt rerum exercitationem impedit est ut odio, fugit aperiam animi ea error! Quis, eveniet?</p>
+                    
+                    <p class="veja">Veja outros diferenciais:</p>
+                    <ul id="about-list">
+                        <li><i class="fas fa-check"></i> Entregas rápidas</li>
+                        <li><i class="fas fa-check"></i> Responsabilidade na qualidade</li>
+                        <li><i class="fas fa-check"></i> Alimentos frescos </li>
+                        <li><i class="fas fa-check"></i> Ética e compromisso com todos</li>
+                        
+                    </ul>
+            </div>
+            
+           
+    </section>
+   
+   <article>
+    <div id="service-area">
+        
+    <h3 class="titulo">Nossas especialidades</h3>
+    <div id="linha-vertical"></div>
+    <div id="linha-horizontal"></div>
+                </div>
+                <div class="areaservico" onmouseenter="entrar()" onmouseout="sair()">
+                    <i class="fas fa-coffee"></i>
+                    <h4>Cafés</h4>
+                    <p class="cafee">Sabor e qualidade em um só café!</p>
+                    </div>
+                <div class="areaservico" onmouseenter="entrar()" onmouseout="sair()"> 
+                        <i class="fas fa-bread-slice"></i>
+                        <h4>Alimentos</h4>
+                        <p class="cafe">Alimentos frescos e com um sabor único!</p>
+                    </div>
+                <div class="areaservico" onmouseenter="entrar()" onmouseout="sair()">
+                        <i class="fas fa-car fa-3x"></i>
+                        <h4>Entregas</h4>
+                        <p>Entregas rápidas e sem perder a tempetura dos alimentos!</p>
+                    </div>
+                  
+                </div>
+                
+
+                </article> 
+                
+             <div>
+                 <h3 class="titulo-3">Nossos Serviços</h3>
+                 <div id="linha-vertical"></div>
+                 <div id="linha-horizontal"></div>
+             </div>
+             <div>
+                 <img class="pessoa-agencia"src="nossos-servicos.jpg" width="700px" height="500px" alt="equipe da agencia">
+             </div>
+             <div class="texto">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui a ad, deserunt libero odit doloremque enim explicabo inventore? 
+                 Dolorum aut maiores placeat beatae eaque officia, unde impedit mollitia eos? <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus inventore, eligendi voluptate iure cumque, magnam pariatur deserunt suscipit recusandae maiores at. 
+                 Nesciunt, dolorum. Voluptatibus tenetur nostrum ducimus esse quae perferendis?</p> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In vel molestias accusantium nisi dolore molestiae 
+                earum culpa, esse amet pariatur, laboriosam placeat dolorem rem laudantium saepe velit dignissimos? Quisquam, a.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et excepturi perferendis, accusantium delectus fugiat dolor iure deserunt. Atque recusandae exercitationem officia, 
+                animi voluptas dolor dolore quisquam! Mollitia, quidem nobis.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio quo magnam laboriosam suscipit, ratione dolore quidem earum repudiandae atque 
+                dolorem quas illum deserunt architecto dicta dolores nobis itaque eum!</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus dolores inventore quas vero hic quibusdam reiciendis iure expedita quos quis reprehenderit quidem, 
+                doloribus quam voluptates, nihil, nobis ullam aperiam.</p>
+             </div>
+             <div class="preco"> 
+                <h4 class="titulo">Preços</h4>
+                <div id="linha-vertical"></div>
+                <div id="linha-horizontal"></div> <br>
+                  <div>
+                      <h5>Nossos preços variam de acordo com:</h5> <br>
+                      <ul>
+                          <li class="listapre"><i class="fas fa-arrow-circle-right"></i></i>Distância </li>
+                          <li class="listapre"><i class="fas fa-arrow-circle-right"></i></i>Quantidade de funcionários a serem atendidos</li>
+                          <li class="listapre" ><i class="fas fa-arrow-circle-right"></i></i>Pacote contratado</li>
+                          <div> <a href="https://api.whatsapp.com/send?phone=5541996539383"><button class="botaopreco">Faça um orçamento</button></a></div> <br>
+                       
+                      </ul>
+                      <div>
+                          
+                      </div>
+                  </div>
+             <footer>
+        
+                      
+                      </div>
+                    </div>
+                    </div>
+                    <div class="text-center" style="background-color: black; padding: 28px;" >
+                      &copy 2022 Copyright: Site desenvolvido e otimizado por <a href="https://api.whatsapp.com/send?phone=5541998682356">Gabriel Franco</a>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5541996539383"
+    target="_blank"
+    style="position:fixed;bottom:20px;right:30px;">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+</a>
+                  </footer>
+             
+           
+                 
+     
+
+
+
+
+<script src = "script.js"></script>
+
+</body>
+</html>
